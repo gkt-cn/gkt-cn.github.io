@@ -94,17 +94,20 @@
 
 
 
-  <meta name="description" content="尝试与世界接轨~">
+  <meta name="description" content="系统安装 下载 deepin15.7，做成 u 盘启动盘 为了安装系统少折腾，关闭 Uefi，磁盘分区都从 gpt 转 mbr 开机 f2，第二菜单的第一个，关闭掉核显卡（很重要），具体是什么不记得了，没截图 保持好设置，再次开机，按 f7，选择 u 盘启动剩下的是装系统过程，随意弄，分区那里具体百度 ，查看别人的推荐方案  初入系统设置 先设置好源，最好不用默认的，这段时间更新的人有点多，我选择">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World!">
-<meta property="og:url" content="https://gkt-cn.github.io/2019/05/03/hello-world/index.html">
+<meta property="og:title" content="&#39;deepin安装驱动、cuda以及cudnn&#39;">
+<meta property="og:url" content="https://gkt-cn.github.io/2019/05/11/deepin安装驱动、cuda以及cudnn/index.html">
 <meta property="og:site_name" content="小果壳的杂货铺">
-<meta property="og:description" content="尝试与世界接轨~">
+<meta property="og:description" content="系统安装 下载 deepin15.7，做成 u 盘启动盘 为了安装系统少折腾，关闭 Uefi，磁盘分区都从 gpt 转 mbr 开机 f2，第二菜单的第一个，关闭掉核显卡（很重要），具体是什么不记得了，没截图 保持好设置，再次开机，按 f7，选择 u 盘启动剩下的是装系统过程，随意弄，分区那里具体百度 ，查看别人的推荐方案  初入系统设置 先设置好源，最好不用默认的，这段时间更新的人有点多，我选择">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-02T17:13:12.986Z">
+<meta property="og:image" content="https://gkt-cn.github.io/imgs/2629182-b1f05d6d1f4c6761.png">
+<meta property="og:image" content="https://gkt-cn.github.io/imgs/2629182-b72174da8e04d596.png">
+<meta property="og:updated_time" content="2019-05-10T16:05:44.507Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World!">
-<meta name="twitter:description" content="尝试与世界接轨~">
+<meta name="twitter:title" content="&#39;deepin安装驱动、cuda以及cudnn&#39;">
+<meta name="twitter:description" content="系统安装 下载 deepin15.7，做成 u 盘启动盘 为了安装系统少折腾，关闭 Uefi，磁盘分区都从 gpt 转 mbr 开机 f2，第二菜单的第一个，关闭掉核显卡（很重要），具体是什么不记得了，没截图 保持好设置，再次开机，按 f7，选择 u 盘启动剩下的是装系统过程，随意弄，分区那里具体百度 ，查看别人的推荐方案  初入系统设置 先设置好源，最好不用默认的，这段时间更新的人有点多，我选择">
+<meta name="twitter:image" content="https://gkt-cn.github.io/imgs/2629182-b1f05d6d1f4c6761.png">
 
 
 
@@ -112,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://gkt-cn.github.io/2019/05/03/hello-world/">
+  <link rel="canonical" href="https://gkt-cn.github.io/2019/05/11/deepin安装驱动、cuda以及cudnn/">
 
 
 
@@ -122,7 +125,7 @@
   };
 </script>
 
-  <title>Hello World! | 小果壳的杂货铺</title>
+  <title>'deepin安装驱动、cuda以及cudnn' | 小果壳的杂货铺</title>
   
 
 
@@ -304,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gkt-cn.github.io/2019/05/03/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://gkt-cn.github.io/2019/05/11/deepin安装驱动、cuda以及cudnn/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tian Guokr">
@@ -321,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World!
+          <h1 class="post-title" itemprop="name headline">'deepin安装驱动、cuda以及cudnn'
 
               
             
@@ -347,7 +350,7 @@
                 
               
 
-              <time title="创建时间：2019-05-03 01:07:28 / 修改时间：01:13:12" itemprop="dateCreated datePublished" datetime="2019-05-03T01:07:28+08:00">2019-05-03</time>
+              <time title="创建时间：2019-05-11 00:01:00 / 修改时间：00:05:44" itemprop="dateCreated datePublished" datetime="2019-05-11T00:01:00+08:00">2019-05-11</time>
             
 
             
@@ -369,7 +372,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随笔/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/教程/" itemprop="url" rel="index"><span itemprop="name">教程</span></a></span>
 
                 
                 
@@ -404,7 +407,97 @@
       
 
       
-        <p>尝试与世界接轨~</p>
+        <h4 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h4><ul>
+<li>下载 deepin15.7，做成 u 盘启动盘</li>
+<li>为了安装系统少折腾，关闭 Uefi，磁盘分区都从 gpt 转 mbr</li>
+<li>开机 f2，第二菜单的第一个，关闭掉核显卡（很重要），具体是什么不记得了，没截图</li>
+<li>保持好设置，再次开机，按 f7，选择 u 盘启动<br>剩下的是装系统过程，随意弄，分区那里具体百度 ，查看别人的推荐方案</li>
+</ul>
+<h4 id="初入系统设置"><a href="#初入系统设置" class="headerlink" title="初入系统设置"></a>初入系统设置</h4><ul>
+<li>先设置好源，最好不用默认的，这段时间更新的人有点多，我选择中科院的源，速度不错</li>
+<li>更细系统，然后重启</li>
+</ul>
+<h4 id="安装显卡驱动"><a href="#安装显卡驱动" class="headerlink" title="安装显卡驱动"></a>安装显卡驱动</h4><ul>
+<li>查看显卡信息</li>
+</ul>
+<pre>lspci  | grep -i vga</pre>
+
+<p>我的是 GeForce GTX 1060</p>
+<ul>
+<li>去官方网站查询和下载驱动 <a href="https://www.nvidia.cn/Download/index.aspx?lang=cn" target="_blank" rel="noopener">https://www.nvidia.cn/Download/index.aspx?lang=cn</a> </li>
+<li>禁用 nouveau 驱动（这步不知道我生效了没，因为我已经在 bios 禁用了）</li>
+</ul>
+<pre>sudo gedit /etc/modprobe.d/blacklist-nouveau.conf</pre>
+
+<p>填入：</p>
+<pre>blacklist nouveau 
+options nouveau modeset=0</pre>
+
+<p>执行如下后，重启电脑</p>
+<pre>sudo update-initramfs -u</pre>
+
+<p>重启后，输入如下，如果没有信息出来就表明禁用成功</p>
+<pre>lsmod | grep nouveau</pre>
+
+<ul>
+<li>安装显卡驱动</li>
+</ul>
+<p>先关闭图像界面<br>ctrl+alt+f2 切换一下，输入命令关闭图像界面</p>
+<pre>sudo service lightdm stop</pre>
+
+<p>cd 到显卡驱动所放目录</p>
+<pre>sudo chmod a+x NVIDIA-Linux-x86_64-390.77.run
+sudo ./NVIDIA-Linux-x86_64-390.77.run</pre>
+
+<p>安装过程中，我是除了 DKMS 和是否支持 32 位选否，其它的都是确定的。<br>安装好后重启电脑<br>开机后输入</p>
+<pre>nvidia-smi</pre>
+
+<p>如图所示即可，之前用系统自带的驱动管理器安装是没这个的。</p>
+<p><img src="/imgs/2629182-b1f05d6d1f4c6761.png" alt></p>
+<h4 id="安装-cuda9-0"><a href="#安装-cuda9-0" class="headerlink" title="安装 cuda9.0"></a>安装 cuda9.0</h4><p>进入 cuda9 和 cudnn7 安装包的目录, 保险起见，我还是关闭图形界面，方法同上，再安装 cuda</p>
+<ul>
+<li>安装 cuda9<br>安装前先保证 gcc 和 g++ 版本对应 cuda，我的是 cuda9.0，官方文档要求 gcc/g++ 5.x，<br>先对 gcc/g++ 降级，参考这个 <a href="https://www.cnblogs.com/in4ight/p/6626708.html" target="_blank" rel="noopener">https://www.cnblogs.com/in4ight/p/6626708.html</a></li>
+</ul>
+<pre>sudo apt-get install gcc-5
+sudo apt-get install g++-5
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
+sudo ./cuda_9.0.176_384.81_linux.run </pre>
+
+<p>先按 q 直接跳过阅读协议，然后 accept，后面的除了<code>Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 384.81?</code>这样的选<code>n</code>, 其它的有 y 选 y，或者直接回车默认，</p>
+<ul>
+<li>检查一下环境变量</li>
+</ul>
+<pre>gedit ~/.bashr</pre>
+
+<p>末尾添加</p>
+<pre>#cuda
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64/:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-9.0/bin:$PATH</pre>
+
+<p>然后<code>source ~/.bashrc</code>一下</p>
+<h4 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h4><p>重新打开一个终端</p>
+<pre>cd /usr/local/cuda-9.0/samples/1_Utilities/deviceQuery
+sudo make
+./deviceQuery </pre>
+
+<p>有<code>PASS</code>则表示成功</p>
+<p><img src="/imgs/2629182-b72174da8e04d596.png" alt></p>
+<h4 id="安装-cudnn7"><a href="#安装-cudnn7" class="headerlink" title="安装 cudnn7"></a>安装 cudnn7</h4><p>先解压安装包，后复制到 cuda 目录</p>
+<pre>tar -zvxf cudnn-9.0-linux-x64-v7.tgz
+cd cuda
+sudo cp -P lib64/* /usr/local/cuda/lib64/
+sudo cp -P include/* /usr/local/cuda/include/
+sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*</pre>
+
+<p>同样的，添加到环境变量，内容如下</p>
+<pre>#cudnn
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
+export CUDA_HOME=/usr/local/cuda</pre>
+
+
+
+<p>本文转载自：<a href="https://www.jianshu.com/p/caa02259e51d" target="_blank" rel="noopener">https://www.jianshu.com/p/caa02259e51d</a></p>
 
       
     </div>
@@ -435,15 +528,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/05/03/hello-world/" rel="next" title="Hello World!">
+                <i class="fa fa-chevron-left"></i> Hello World!
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/11/deepin安装驱动、cuda以及cudnn/" rel="prev" title="'deepin安装驱动、cuda以及cudnn'">
-                'deepin安装驱动、cuda以及cudnn' <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -487,8 +580,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -581,6 +683,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#系统安装"><span class="nav-number">1.</span> <span class="nav-text">系统安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初入系统设置"><span class="nav-number">2.</span> <span class="nav-text">初入系统设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装显卡驱动"><span class="nav-number">3.</span> <span class="nav-text">安装显卡驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-cuda9-0"><span class="nav-number">4.</span> <span class="nav-text">安装 cuda9.0</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#验证安装"><span class="nav-number">5.</span> <span class="nav-text">验证安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-cudnn7"><span class="nav-number">6.</span> <span class="nav-text">安装 cudnn7</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
